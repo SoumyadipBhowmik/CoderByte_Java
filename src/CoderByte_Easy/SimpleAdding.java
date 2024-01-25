@@ -1,5 +1,7 @@
 package CoderByte_Easy;
 
+import java.util.Scanner;
+
 /*
 Coderbyte coding challenge: Simple Adding
 
@@ -18,6 +20,19 @@ Output: 9870
 */
 
 public class SimpleAdding {
+	
+	public static void factorialAdding(int number) {
+		int sum = 0;
+		for(int i = 1; i <= number; i++) {
+			sum += i;
+		}
+		System.out.println(sum);
+	}
 	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		input.close();
+		factorialAdding(input.nextInt());
+		
 	}
 }
